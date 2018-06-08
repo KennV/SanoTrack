@@ -12,7 +12,7 @@
 
 @interface KDVTableViewController : UITableViewController
 
-@property (strong, nonatomic) KDVMapViewController *detailViewController;
+@property (strong, nonatomic) KDVMapViewController *mapView;
 
 
 @end

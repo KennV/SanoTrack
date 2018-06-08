@@ -23,7 +23,7 @@
 
   UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
   self.navigationItem.rightBarButtonItem = addButton;
-  self.detailViewController = (KDVMapViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+  self.mapView = (KDVMapViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
 
@@ -55,10 +55,10 @@
   if ([[segue identifier] isEqualToString:@"showDetail"]) {
       NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
       NSDate *object = self.objects[indexPath.row];
-      KDVMapViewController *controller = (KDVMapViewController *)[[segue destinationViewController] topViewController];
-      [controller setDetailItem:object];
-      controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
-      controller.navigationItem.leftItemsSupplementBackButton = YES;
+      KDVMapViewController *mapView = (KDVMapViewController *)[[segue destinationViewController] topViewController];
+      [mapView setDetailItem:object];
+      mapView.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
+      mapView.navigationItem.leftItemsSupplementBackButton = YES;
   }
 }
 
