@@ -133,8 +133,8 @@
 		3897167F20CAE1210052D6F1 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
-				3897165320CAE08E0052D6F1 /* Main.storyboard */,
 				3897165620CAE08F0052D6F1 /* Assets.xcassets */,
+				3897165320CAE08E0052D6F1 /* Main.storyboard */,
 				3897165820CAE08F0052D6F1 /* LaunchScreen.storyboard */,
 			);
 			path = GUI;
@@ -170,11 +170,19 @@
 		3897168320CAE1770052D6F1 /* AppSupport */ = {
 			isa = PBXGroup;
 			children = (
-				3897164A20CAE08E0052D6F1 /* AppDelegate.h */,
-				3897164B20CAE08E0052D6F1 /* AppDelegate.m */,
+				3897168420CAE7E40052D6F1 /* AppController */,
 				3897165C20CAE08F0052D6F1 /* main.m */,
 			);
 			path = AppSupport;
+			sourceTree = "<group>";
+		};
+		3897168420CAE7E40052D6F1 /* AppController */ = {
+			isa = PBXGroup;
+			children = (
+				3897164A20CAE08E0052D6F1 /* AppDelegate.h */,
+				3897164B20CAE08E0052D6F1 /* AppDelegate.m */,
+			);
+			path = AppController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
