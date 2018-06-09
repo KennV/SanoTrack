@@ -20,7 +20,7 @@ _then set a default init_
 @interface KDVAbstractDataController : NSObject <NSFetchedResultsControllerDelegate>
 
 /**
- Default Init()
+ DEFAULT Init()
 
  @param a Current AppName
  @param d Current DatabaseName
@@ -30,7 +30,7 @@ _then set a default init_
 - (id)initWithAppName:(NSString*)a databaseName:(NSString*)d className:(NSString*)c;
 
 /*Surprisingly Important
- Rithout these ivars you __Will Fail__ init() in MOM, PCONT, MOC, and PSK in that order
+ Without these ivars you __Will Fail__ init() in MOM, PCONT, MOC, and PSK in that order
  */
 
 /**
@@ -75,5 +75,6 @@ _then set a default init_
  Gets ALL Entities of this type
  */
 @property (strong, nonatomic) NSFetchedResultsController *fetchCon;
+
 - (void)performAutomaticLightweightMigration;
 @end
