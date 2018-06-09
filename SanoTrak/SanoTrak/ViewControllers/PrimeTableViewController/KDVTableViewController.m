@@ -1,10 +1,10 @@
-//
-//  MasterViewController.m
-//  SanoTrak
-//
-//  Created by Kenn Villegas on 6/8/18.
-//  Copyright © 2018 Kenn Villegas. All rights reserved.
-//
+/**
+  MasterViewController.m
+  SanoTrak
+
+  Created by Kenn Villegas on 6/8/18.
+  Copyright © 2018 Kenn Villegas. All rights reserved.
+*/
 
 #import "KDVTableViewController.h"
 #import "KDVMapViewController.h"
@@ -38,7 +38,7 @@
   // Dispose of any resources that can be recreated.
 }
 
-
+//TODO: - Replace 'Objects'
 - (void)insertNewObject:(id)sender {
   if (!self.objects) {
       self.objects = [[NSMutableArray alloc] init];
@@ -97,6 +97,23 @@
   } else if (editingStyle == UITableViewCellEditingStyleInsert) {
       // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
   }
+}
+
+#pragma mark - Data
+
+#pragma mark - Protocols
+
+/**
+ STUB Protocol Def
+
+ @param deli - I am the Class DOING this favor
+ @param person2 - reciever of this favor
+ @param person1 - sender of this favor
+ @return - Truthiness of the result
+ */
+- (BOOL)didJiveOner:(id)deli aFavorFor:(id)person2 fromPerson:(id)person1 {
+  return false;
+  
 }
 
 
