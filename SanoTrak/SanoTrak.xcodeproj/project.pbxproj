@@ -24,6 +24,7 @@
 		3897169420CBFA8F0052D6F1 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3897169220CBFA8F0052D6F1 /* AddressBookUI.framework */; };
 		389716A320CBFC950052D6F1 /* SanoTrak.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3897169E20CBFC950052D6F1 /* SanoTrak.xcdatamodeld */; };
 		389716A620CC00FB0052D6F1 /* KDVAbstractDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 389716A520CC00FB0052D6F1 /* KDVAbstractDataController.m */; };
+		38F233F320CC17F5000982DE /* KDVApplicationDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F233F220CC17F5000982DE /* KDVApplicationDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		3897169F20CBFC950052D6F1 /* SanoTrak.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SanoTrak.xcdatamodel; sourceTree = "<group>"; };
 		389716A420CC00FB0052D6F1 /* KDVAbstractDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDVAbstractDataController.h; sourceTree = "<group>"; };
 		389716A520CC00FB0052D6F1 /* KDVAbstractDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDVAbstractDataController.m; sourceTree = "<group>"; };
+		38F233F120CC17F5000982DE /* KDVApplicationDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDVApplicationDataController.h; sourceTree = "<group>"; };
+		38F233F220CC17F5000982DE /* KDVApplicationDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDVApplicationDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,26 +246,20 @@
 		389716A020CBFC950052D6F1 /* DataControllers */ = {
 			isa = PBXGroup;
 			children = (
-				389716A120CBFC950052D6F1 /* ApplicationControllers */,
-				389716A220CBFC950052D6F1 /* AbstractControllers */,
+				389716A220CBFC950052D6F1 /* DataControllers */,
 			);
 			path = DataControllers;
 			sourceTree = "<group>";
 		};
-		389716A120CBFC950052D6F1 /* ApplicationControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ApplicationControllers;
-			sourceTree = "<group>";
-		};
-		389716A220CBFC950052D6F1 /* AbstractControllers */ = {
+		389716A220CBFC950052D6F1 /* DataControllers */ = {
 			isa = PBXGroup;
 			children = (
 				389716A420CC00FB0052D6F1 /* KDVAbstractDataController.h */,
 				389716A520CC00FB0052D6F1 /* KDVAbstractDataController.m */,
+				38F233F120CC17F5000982DE /* KDVApplicationDataController.h */,
+				38F233F220CC17F5000982DE /* KDVApplicationDataController.m */,
 			);
-			path = AbstractControllers;
+			path = DataControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,6 +394,7 @@
 			files = (
 				3897164F20CAE08E0052D6F1 /* KDVTableViewController.m in Sources */,
 				3897164C20CAE08E0052D6F1 /* AppDelegate.m in Sources */,
+				38F233F320CC17F5000982DE /* KDVApplicationDataController.m in Sources */,
 				389716A320CBFC950052D6F1 /* SanoTrak.xcdatamodeld in Sources */,
 				389716A620CC00FB0052D6F1 /* KDVAbstractDataController.m in Sources */,
 				3897165D20CAE08F0052D6F1 /* main.m in Sources */,
